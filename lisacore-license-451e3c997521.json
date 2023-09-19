@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "lisacore-license",
+  "private_key_id": "451e3c9975215951355ac46431eb7cdc743233ca",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCtjPogMLhCat3h\nnj21csCQxZguo8jrIZNvgY/7h1g1JEUjSxLkemOCc+jRPpHyrJ9qQ5N1/H9g7QUN\nIt+WMk3pz13DQoRGH4jzMktV4G1TZOawP2Yaevia8ucZpGZM3RxSIW6RwJ8abIHO\nvbJW6nV52cl8t6EQhjZk0jOnCQPODtvUluIQbGJkaIWveVe7YWA6Q54QpksBI4Jw\n4ZaAtGDGsvLicL01JhEkFm7nmOheNtyVaBB51u5KWrkfZoz+nSm7uiv22ySjM8Bg\n7+abpcAbPkxLzliXgN3ci/4CfE0xXrzIxy3YeA2HoaRT5knKQVq4eCytZyR1BzU2\nY8NQwj11AgMBAAECggEAUAuMtdoisid+DPiiN5UkseEg7qoGGkTTLoPQd8+V5HTF\nGqEeppi4WsvBHvk/8XCi2i0uzyVVTswjH0rtWuX6v5MwCMYeIgWbcafJzWMEqYkJ\nSVMEccQz86uC4XXM5Ti6PjtDNyBjgZl4SXV+0s2yvy+u2cIMHIX6gofc4PasdZXq\n4HjwVLLyv6O9DrLCFUc8nZgsPqyhnlTMSPrx2OhycTLRC6b1XtZNuPDEpZKoVUu/\nvqxwZ9kIYkylpyPtA0ohD0f8ydnNLHQ5dXRddCSIkUhs8zOQjsv7MIMsYJJMXnzj\njOBbKyYVXFK2vBo999aHIoJQNpwCwylm/8DWU4C2ZQKBgQDu86aFQIPq4HUPaMaI\nbfyTiz8//24r5E66BGN/jXsonnMnQX+m8qfi8zjmNytjNPD3uHP8hSjF5R0YFcDZ\n+KDaHqlKFCMd6Jjxpx/fHnPwh6sEtliM4XF6UF4ShFxQIGLqfUuMq2ls5HnIWghp\nCsmtt34NAsPzayYYl9fzONOucwKBgQC57s38zsvWRdvcXF1H2nJGZ7dboSE33C6P\naSMDRvtdj3hgXJYeWX+FtcTmgApYloRljuhhmXRNaWhH1Te7uC+Us8Nc3EkjYNPK\nFDTW6eFsVdn6nCerQQKxjbwRlurNWjcQRC7oAi8EnzEDmMRXsHsuqu8kNOvlnCio\nnVyhR/PCdwKBgQDq8sl95gSPkmmnYBctmC+sB1OGoqn6ID9EagJHLZ62Pq3tIFra\nlWd8IDiHLCHOJwT0Hfp1hZykkHW9882uxOer8E/2Vbx9sPGJUhFlefT3wP3n4T9K\nLnU8lf8ZZ+m4o09/TvlU9Enx1ujjlZsFZaUN2Qjo1BpFospPjiW4sdx5fwKBgDGx\nrcRf0QMX8MdYuGW38Mr4dX0795DifF9ADmeV1SEQc2/tzwGVkgu+pT2mAx3iPMiY\nBWvwg7Ec9w4b4qV9eNoZoaF0DugxvOlJtUWrhOBbocLlcYTH/1xNMXLSDzeLYSQr\n1Q2VZ9OoaIU5k2CMfp/ed8QJkPLxZbyLMnK4tGHJAoGAc/R0UHblLRv8Cd78L1LE\nvPBureCTzL3JnzylKAIKbup4TbmG+yzH+EoKlSb3IVR1BiwWfc6wWieqFK+uTC6d\nrp8KRduZHhd5Ee4OJ1ycWAkq7idLtNotfuuT9DmwN8AQtHw3nhbhpWPMs7gtxVOh\nyubMY77LKY4flEgdbmHk0zI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "lisacore@lisacore-license.iam.gserviceaccount.com",
+  "client_id": "100715089585427562228",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/lisacore%40lisacore-license.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

@@ -1,0 +1,187 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "LicenseManager/1.0.0": {
+        "dependencies": {
+          "GoogleSheetsWrapper": "1.0.54"
+        },
+        "runtime": {
+          "LicenseManager.dll": {}
+        }
+      },
+      "CsvHelper/30.0.1": {
+        "runtime": {
+          "lib/net6.0/CsvHelper.dll": {
+            "assemblyVersion": "30.0.0.0",
+            "fileVersion": "30.0.1.0"
+          }
+        }
+      },
+      "DocumentFormat.OpenXml/2.19.0": {
+        "dependencies": {
+          "System.IO.Packaging": "4.7.0"
+        },
+        "runtime": {
+          "lib/net6.0/DocumentFormat.OpenXml.dll": {
+            "assemblyVersion": "2.19.0.0",
+            "fileVersion": "2.19.0.0"
+          }
+        }
+      },
+      "Google.Apis/1.59.0": {
+        "dependencies": {
+          "Google.Apis.Core": "1.59.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.dll": {
+            "assemblyVersion": "1.59.0.0",
+            "fileVersion": "1.59.0.0"
+          }
+        }
+      },
+      "Google.Apis.Auth/1.59.0": {
+        "dependencies": {
+          "Google.Apis": "1.59.0",
+          "Google.Apis.Core": "1.59.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll": {
+            "assemblyVersion": "1.59.0.0",
+            "fileVersion": "1.59.0.0"
+          },
+          "lib/netstandard2.0/Google.Apis.Auth.dll": {
+            "assemblyVersion": "1.59.0.0",
+            "fileVersion": "1.59.0.0"
+          }
+        }
+      },
+      "Google.Apis.Core/1.59.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Core.dll": {
+            "assemblyVersion": "1.59.0.0",
+            "fileVersion": "1.59.0.0"
+          }
+        }
+      },
+      "Google.Apis.Sheets.v4/1.59.0.2909": {
+        "dependencies": {
+          "Google.Apis": "1.59.0",
+          "Google.Apis.Auth": "1.59.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Sheets.v4.dll": {
+            "assemblyVersion": "1.59.0.2909",
+            "fileVersion": "1.59.0.2909"
+          }
+        }
+      },
+      "GoogleSheetsWrapper/1.0.54": {
+        "dependencies": {
+          "CsvHelper": "30.0.1",
+          "DocumentFormat.OpenXml": "2.19.0",
+          "Google.Apis.Sheets.v4": "1.59.0.2909"
+        },
+        "runtime": {
+          "lib/netstandard2.1/GoogleSheetsWrapper.dll": {
+            "assemblyVersion": "1.0.54.0",
+            "fileVersion": "1.0.54.0"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.2": {
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.2.27524"
+          }
+        }
+      },
+      "System.IO.Packaging/4.7.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.IO.Packaging.dll": {
+            "assemblyVersion": "4.0.5.0",
+            "fileVersion": "4.700.19.56404"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LicenseManager/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CsvHelper/30.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rcZtgbWR+As4G3Vpgx0AMNmShGuQLFjkHAPIIflzrfkJCx8/AOd4m96ZRmiU1Wi39qS5UVjV0P8qdgqOo5Cwyg==",
+      "path": "csvhelper/30.0.1",
+      "hashPath": "csvhelper.30.0.1.nupkg.sha512"
+    },
+    "DocumentFormat.OpenXml/2.19.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BLFqodowHZHR/A/sKU/6e+63J5ONWDdv8hEuSZOUiBfGFuVmsG9P3o+LMSq+dajNWE1q+lqVSa1H5FuhLX8/fA==",
+      "path": "documentformat.openxml/2.19.0",
+      "hashPath": "documentformat.openxml.2.19.0.nupkg.sha512"
+    },
+    "Google.Apis/1.59.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1RJ9tY4tkm2M5IXGLHtJCxx+TLYujJ1mxn15l1ZrQXdR9O2fAYY/l8j2p53ZJJFVTybo5XIM4FuCJyW8wVcIsw==",
+      "path": "google.apis/1.59.0",
+      "hashPath": "google.apis.1.59.0.nupkg.sha512"
+    },
+    "Google.Apis.Auth/1.59.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zPZoEwf+Fi26YUAfN/HUyhThPneUQFwtT+RJHLAEfTm1CpPu4nCWDP0Hwx796o57WxvVrffzj0bsjBHsdFHDWg==",
+      "path": "google.apis.auth/1.59.0",
+      "hashPath": "google.apis.auth.1.59.0.nupkg.sha512"
+    },
+    "Google.Apis.Core/1.59.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LouWN5JzAJnOVbK3bLTX9WzIppggO1kE8u8PNe5fTLMLVzGzjqpDcbtJc15tGgUHzUVSZaSOdLWWegjH57fluw==",
+      "path": "google.apis.core/1.59.0",
+      "hashPath": "google.apis.core.1.59.0.nupkg.sha512"
+    },
+    "Google.Apis.Sheets.v4/1.59.0.2909": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-44rjavzduiDX1JSj5qRlA4Jn8DPfVmNluUYcH3T47FbeQa7Ij5AxTcYxm1EUP9zAezkdli1lyboN1s1fdtGehQ==",
+      "path": "google.apis.sheets.v4/1.59.0.2909",
+      "hashPath": "google.apis.sheets.v4.1.59.0.2909.nupkg.sha512"
+    },
+    "GoogleSheetsWrapper/1.0.54": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kYbAAEaxjHF8izDdNUWgXfK2AD8B68x71kss9AVDfnKEsUoEiuV6PMn/+D2V7x+yoaFGk8pzgogmsRKOGcOqhQ==",
+      "path": "googlesheetswrapper/1.0.54",
+      "hashPath": "googlesheetswrapper.1.0.54.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-R2pZ3B0UjeyHShm9vG+Tu0EBb2lC8b0dFzV9gVn50ofHXh9Smjk6kTn7A/FdAsC8B5cKib1OnGYOXxRBz5XQDg==",
+      "path": "newtonsoft.json/13.0.2",
+      "hashPath": "newtonsoft.json.13.0.2.nupkg.sha512"
+    },
+    "System.IO.Packaging/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9VV4KAbgRQZ79iEoG40KIeZy38O30oWwewScAST879+oki8g/Wa2HXZQgrhDDxQM4GkP1PnRJll05NMiVPbYAw==",
+      "path": "system.io.packaging/4.7.0",
+      "hashPath": "system.io.packaging.4.7.0.nupkg.sha512"
+    }
+  }
+}
