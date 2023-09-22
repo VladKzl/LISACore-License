@@ -30,7 +30,7 @@ namespace LicenseManager
                 case CredentialsCellName.EndDate:
                 case CredentialsCellName.IssuedDays:
                 case CredentialsCellName.LastDays:
-                case CredentialsCellName.IssuedTreads:
+                case CredentialsCellName.IssuedThreads:
                 case CredentialsCellName.CurrentThreads:
                 case CredentialsCellName.FingerPrint:
                 case CredentialsCellName.WinName:
@@ -43,7 +43,7 @@ namespace LicenseManager
                 case CredentialsCellName.CpuCode:
                 case CredentialsCellName.Cpus:
                 case CredentialsCellName.BoardName:
-                case CredentialsCellName.BoaedCode:
+                case CredentialsCellName.BoardCode:
                 case CredentialsCellName.Boards:
                 case CredentialsCellName.HddCode:
             }

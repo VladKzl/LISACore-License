@@ -1,4 +1,10 @@
-﻿namespace LicenseManager.Extentions
+﻿using DocumentFormat.OpenXml.EMMA;
+using DocumentFormat.OpenXml.ExtendedProperties;
+using DocumentFormat.OpenXml.Wordprocessing;
+using System.Reflection.Emit;
+using System.Reflection;
+
+namespace LicenseManager.Extentions
 {
     public static class CredentialsExtentions
     {
@@ -31,7 +37,7 @@
                     index.number = 5;
                     index.letter = "F";
                     break;
-                case CredentialsCellName.IssuedTreads:
+                case CredentialsCellName.IssuedThreads:
                     index.number = 6;
                     index.letter = "G";
                     break;
@@ -59,7 +65,7 @@
                     index.number = 12;
                     index.letter = "M";
                     break;
-                case CredentialsCellName.Manufacture:
+                case CredentialsCellName.Manufacturer:
                     index.number = 13;
                     index.letter = "N";
                     break;
@@ -83,7 +89,7 @@
                     index.number = 18;
                     index.letter = "S";
                     break;
-                case CredentialsCellName.BoaedCode:
+                case CredentialsCellName.BoardCode:
                     index.number = 19;
                     index.letter = "T";
                     break;
@@ -98,25 +104,71 @@
             }
             return index;
         }
-        public static List<CredantialsItem> MapToItem(IList<IList<object>> values)
+        public static string GetCellRange(string cellLetter, int rowIndex)
         {
-            var items = new List<CredantialsItem>();
-            foreach (var value in values)
+            return $"{cellLetter}{rowIndex}:{cellLetter}{rowIndex}";
+        }
+        public static List<CredentialsItem> MapToItems(this IList<IList<object>> values)
+        {
+            List<CredentialsItem> items = new();
+            foreach (IList<object> value in values)
             {
-                CredantialsItem item = new()
+                CredentialsItem item = new()
                 {
+                    Key = value[GetCellIndex(CredentialsCellName.Key).number].ToString(),
                     TG = value[GetCellIndex(CredentialsCellName.TG).number].ToString(),
-                    T = value[1].ToString(),
-                    Category = value[2].ToString(),
-                    Price = value[3].ToString()
+                    StartDate = value[GetCellIndex(CredentialsCellName.StartDate).number].ToString(),
+                    EndDate = value[GetCellIndex(CredentialsCellName.EndDate).number].ToString(),
+                    IssuedDays = (int)value[GetCellIndex(CredentialsCellName.IssuedDays).number],
+                    LastDays = (int)value[GetCellIndex(CredentialsCellName.LastDays).number],
+                    IssuedThreads = (int)value[GetCellIndex(CredentialsCellName.IssuedThreads).number],
+                    CurrentThreads = (int)value[GetCellIndex(CredentialsCellName.CurrentThreads).number],
+                    FingerPrint = value[GetCellIndex(CredentialsCellName.FingerPrint).number].ToString(),
+                    WinName = value[GetCellIndex(CredentialsCellName.WinName).number].ToString(),
+                    WinVer = value[GetCellIndex(CredentialsCellName.WinVer).number].ToString(),
+                    DeviceCode = value[GetCellIndex(CredentialsCellName.DeviceCode).number].ToString(),
+                    Name = value[GetCellIndex(CredentialsCellName.Name).number].ToString(),
+                    Manufacturer = value[GetCellIndex(CredentialsCellName.Manufacturer).number].ToString(),
+                    Model = value[GetCellIndex(CredentialsCellName.Model).number].ToString(),
+                    CpuName = value[GetCellIndex(CredentialsCellName.CpuName).number].ToString(),
+                    CpuCode = value[GetCellIndex(CredentialsCellName.CpuCode).number].ToString(),
+                    Cpus = (int)value[GetCellIndex(CredentialsCellName.Cpus).number],
+                    BoardName = value[GetCellIndex(CredentialsCellName.BoardName).number].ToString(),
+                    BoardCode = value[GetCellIndex(CredentialsCellName.BoardCode).number].ToString(),
+                    Boards = (int)value[GetCellIndex(CredentialsCellName.Boards).number],
+                    HddCode = value[GetCellIndex(CredentialsCellName.HddCode).number].ToString(),
                 };
                 items.Add(item);
             }
             return items;
         }
-        public static IList<IList<object>> MapFormItem(CredantialsItem item)
+        public static IList<IList<object>> MapFromItems(this CredentialsItem item)
         {
-            var objectList = new List<object>() { item.Id, item.Name, item.Category, item.Price };
+            var objectList = new List<object>() 
+            {
+                item.Key,
+                item.TG,
+                item.StartDate,
+                item.EndDate,
+                item.IssuedDays,
+                item.LastDays,
+                item.IssuedThreads,
+                item.CurrentThreads,
+                item.FingerPrint,
+                item.WinName,
+                item.WinVer,
+                item.DeviceCode,
+                item.Name,
+                item.Manufacturer,
+                item.Model,
+                item.CpuName,
+                item.CpuCode,
+                item.Cpus,
+                item.BoardName,
+                item.BoardCode,
+                item.Boards,
+                item.HddCode
+            };
             var rangeData = new List<IList<object>> { objectList };
             return rangeData;
         }

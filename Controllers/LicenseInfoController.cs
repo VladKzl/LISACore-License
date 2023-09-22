@@ -12,15 +12,21 @@ namespace LicenseManager
         {
             Repo = repo;
         }
-        [HttpGet("{licKey:guid}")]
-        public IActionResult GetRowCellValue([FromQuery] string licKey, [FromQuery] string _cellName)
+        [HttpGet]
+        public IActionResult GetRowCellValue(Guid licKey, string _cellName)
         {
-            if(licKey == "" || licKey == null)
-                throw new Exception("Вы не передали лицензионный ключ.");
             object cellName;
             if (!Enum.TryParse(typeof(LicenseInfoCellName), _cellName, out cellName))
-                throw new Exception("Не верное имя ячейки.");
-            cellName = (LicenseInfoCellName)cellName;
+                throw new Exception("Не верное имя ячейки.");//return BadRequest("Не верное имя ячейки.");
+
+            cellName = Enum.Parse(typeof(CredentialsCellName), _cellName);
+            object cellValue = Repo.GetRowCellValue(licKey.ToString(), (CredentialsCellName)cellName);
+            return Ok(cellValue);
+        }
+        [HttpPost]
+        public IActionResult SetCurrentThreadsCell(Guid licKey, int threads)
+        {
+            Repo.SetRowCellValue(licKey.ToString(), CredentialsCellName.CurrentThreads, threads);
             return Ok();
         }
     }
